@@ -37,7 +37,7 @@
     width: 100%;
     background-color: transparent;
     font-weight: 400;
-    font-size: 24px;
+    font-size: inherit;
     line-height: 1.4;
     color: $green;
 
@@ -57,7 +57,6 @@
     border-radius: 40px;
     padding: 16px 31px;
     font-weight: 700;
-    font-size: 24px;
     line-height: 1.4;
     color: $light;
     background-color: $purple;
