@@ -110,4 +110,28 @@
     display: inline-block;
     margin-bottom: 16px;
   }
+
+  &__link {
+    display: inline-block;
+    transition: color 0.2s ease-in-out, outline-color 0.12s ease-in-out, transform 0.3s ease-in-out;
+    outline: 1px solid transparent;
+    outline-offset: 6px;
+    border-radius: 3px;
+    
+    &:hover:not(:focus-visible) {
+      color: $purple;
+      transform: scale(1.3);
+    }
+
+    &:focus-visible {
+      outline-color: $carrot;
+      transform: scale(1.2);
+    }
+
+    &:active {
+      color: inherit;
+      outline-color: transparent;
+      opacity: 0.8;
+    }
+  }
 }
